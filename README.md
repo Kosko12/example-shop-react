@@ -1,12 +1,35 @@
-# React + Vite
+# Badania API — Development Setup & Docker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📦 Wymagania wstępne
 
-Currently, two official plugins are available:
+- Docker i Docker Compose zainstalowane na Twoim systemie
+lub
+- Środowisko node v20
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Budowanie kontenerów
 
-## Expanding the ESLint configuration
+W pierwszej kolejności zbuduj obrazy dockera:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+docker-compose build
+```
+
+## 🔧 Uruchamianie kontenera
+Aby uruchomić aplikację w tle wpisujemy:
+
+```bash
+docker-compose up -d
+```
+
+## 🔧 Uruchamianie bez Dockera
+Aby uruchomić aplikację bez Dockera po kolei wpisujemy:
+- w celu instalacji zalezności
+```bash
+npm i
+```
+- uruchamiamy aplikację:
+```bash
+npm run dev
+```
+
+aplikacja jest uruchomiona pod [http://localhost:5173](http://localhost:5173)
