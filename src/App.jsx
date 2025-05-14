@@ -1,10 +1,10 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router";
-import Home from './pages/Home';
-import ProductDetails from './pages/ProductDetails';
-import Products from './pages/Products';
-import NotFound from './pages/NotFound';
 import PageWrapper from './layout/PageWrapper';
+import Home from './pages/Home';
+import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails';
+import NotFound from './pages/NotFound';
 
 function App() {
 
