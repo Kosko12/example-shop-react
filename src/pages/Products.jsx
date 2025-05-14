@@ -35,6 +35,7 @@ const Products = () => {
     }
     return (
         <>
+            <h1 className="text-3xl font-bold">Lista produktów</h1>
             <label className="select">
                 <span className="label">Sortowanie</span>
                 <select className="select select-primary" value={sortMode}
@@ -52,7 +53,7 @@ const Products = () => {
     hover:bg-base-300" >
                             <img src={product.image} alt={product.title} className="w-20 h-20 object-contain" />
                             <section>
-                                <h1 className="text-xl font-bold">{product.title}</h1>
+                                <h2 className="text-xl font-bold">{product.title}</h2>
                                 <p className="text-sm text-gray-500">{priceFormatter(product.price)}</p>
                             </section>
                         </Link>
